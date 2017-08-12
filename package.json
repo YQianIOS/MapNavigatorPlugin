@@ -1,17 +1,20 @@
 {
-  "name": "MapNavigator",
-  "version": “1.0.1”,
-  "description": "",
+  "name": "cordova-plugin-mapnavigator",
+  "version": "1.0.2",
+  "description": "ionic2 地图导航跳转第三方应用(优先跳转百度地图,若没安装会自动跳转高德地图, 若都没有安装则提示需要安装)",
   "cordova": {
     "id": "com.plugin.MapNavigator",
     "platforms": [
       "ios"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YQianIOS/MapNavigatorPlugin.git"
+  },
+  "author":  ["yilei","yangqian"],
   "keywords": [
-    "ecosystem:cordova",
-    "cordova-ios"
+    "MapNavigator"
   ],
-  "author": "",
   "license": "ISC"
 }
