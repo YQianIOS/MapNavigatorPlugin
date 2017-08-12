@@ -4,7 +4,7 @@ ionic2 地图导航跳转第三方应用(优先跳转百度地图,若没安装�
 
 ## Usage
 
-	ionic cordova plugin rm cordova-plugin-mapnavigator
+	cordova plugin add cordova-plugin-mapnavigator
 
 
 ```javascript
