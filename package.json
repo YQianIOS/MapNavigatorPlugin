@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-scancodeplugin",
+  "name": "cordova-plugin-mapnavigator",
   "version": "0.0.4",
   "description": "qrscan plugin for ionic",
   "cordova": {
-    "id": "cordova-plugin-scancodeplugin",
+    "id": "cordova-plugin-mapnavigator",
     "platforms": [
       "ios","android"
     ]
