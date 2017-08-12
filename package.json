@@ -1,20 +1,21 @@
 {
-  "name": "cordova-plugin-mapnavigator",
-  "version": "1.0.3",
-  "description": "ionic2 地图导航跳转第三方应用(优先跳转百度地图,若没安装会自动跳转高德地图, 若都没有安装则提示需要安装)",
+  "name": "cordova-plugin-scancodeplugin",
+  "version": "0.0.4",
+  "description": "qrscan plugin for ionic",
   "cordova": {
-    "id": "cordova-plugin-mapnavigator",
+    "id": "cordova-plugin-scancodeplugin",
     "platforms": [
-      "ios"
+      "ios","android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YQianIOS/MapNavigatorPlugin.git"
+    "url": "https://github.com/1ziton/cordova.plugin.scancodeplugin.git"
   },
-  "author":  ["yilei","yangqian"],
   "keywords": [
-    "MapNavigator"
+    "ecosystem:cordova",
+    "cordova-ios"
   ],
+  "author": ["yilei","yangqian"],
   "license": "ISC"
 }
