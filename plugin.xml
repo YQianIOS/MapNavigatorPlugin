@@ -1,59 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-scancodeplugin" version="0.0.4" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="cordova-plugin-mapnavigator" version="1.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>ScanCodePlugin</name>
-    <js-module name="ScanCodePlugin" src="www/ScanCodePlugin.js">
-        <clobbers target="cordova.plugins.ScanCodePlugin"/>
+    <name>MapNavigator</name>
+    <js-module name="MapNavigator" src="www/MapNavigator.js">
+        <clobbers target="cordova.plugins.MapNavigator"/>
     </js-module>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="ScanCodePlugin">
-                <param name="ios-package" value="ScanCodePlugin"/>
+            <feature name="MapNavigator">
+                <param name="ios-package" value="MapNavigator"/>
             </feature>
         </config-file>
-        <source-file src="src/ios/ScanCodePlugin.m"/>
-        <header-file src="src/ios/scanCodePluginClass/ScanCodeViewController.h"/>
-        <source-file src="src/ios/scanCodePluginClass/ScanCodeViewController.m"/>
-        <header-file src="src/ios/scanCodePluginClass/CodeReaderView.h"/>
-        <source-file src="src/ios/scanCodePluginClass/CodeReaderView.m"/>
-        <resource-file src="src/ios/scanCodePluginClass/lightNormal.png"/>
-        <resource-file src="src/ios/scanCodePluginClass/lightSelect.png"/>
-        <resource-file src="src/ios/scanCodePluginClass/noticeMusic.wav"/>
-        <resource-file src="src/ios/scanCodePluginClass/scanLine@2x.png"/>
-        <resource-file src="src/ios/scanCodePluginClass/scanLine@3x.png"/>
-        <resource-file src="src/ios/scanCodePluginClass/scanscanBg.png"/>
+        <source-file src="src/ios/MapNavigator.m"/>
+        <header-file src="src/ios/MapNavigator.h"/>
     </platform>
-
-
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="ScanCodePlugin">
-                <param name="android-package" value="cordova.plugin.ScanCodePlugin.ScanCodePlugin"/>
+            <feature name="MapNavigator">
+                <param name="android-package" value="cordova.plugin.MapNavigator.MapNavigator"/>
             </feature>
         </config-file>
-        <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.VIBRATE" />
-            <!-- 闪光灯 -->
-            <uses-permission android:name="android.permission.FLASHLIGHT" />
-
-            <!-- 多媒体相关 -->
-            <uses-permission android:name="android.permission.CAMERA" />
-            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-        </config-file>
-
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:name="com.yle.borcodescan.app.CaptureActivity" />
-            <activity android:name="com.yle.borcodescan.app.PreferencesActivity" />
-        </config-file>
-
-        <source-file src="src/android/borcodescan-debug.aar" target-dir="libs" />
-
-        <framework src="src/android/ScanCodePlugin.gradle" custom="true" type="gradleReference"/>
-
-        <source-file src="src/android/ScanCodePlugin.java"
-                     target-dir="src/cordova/plugin/ScanCodePlugin/ScanCodePlugin"/>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/MapNavigator.java" target-dir="src/cordova/plugin/MapNavigator/MapNavigator"/>
     </platform>
-
 </plugin>
